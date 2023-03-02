@@ -1,5 +1,5 @@
 name = ''
-age =''
+age = 20
 name = input('What is your name: ')
 age = input('Enter age: ')
 if name == 'Alice':
