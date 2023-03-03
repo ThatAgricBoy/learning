@@ -1,46 +1,58 @@
-# 100 days, 1 hour per day,
+## Variables
+
+# UPDATE
+We've moved away from repl.it for coding exercises.
+Check out the new exercises on Coding Rooms with automated submissions.
+
+Login to your Udemy course and head over to the link below to get the sign up link:
+
+[Click here](https://www.udemy.com/course/100-days-of-code/learn/lecture/17825914#questions)
+# Instructions
+
+Write a program that switches the values stored in the variables a and b. 
+
+**Warning.** Do not change the code on lines 1-4 and 12-18. Your program should work for different inputs. e.g. any value of a and b.
+
+# Example Input
+
+```
+a: 3
+```
+
+```
+b: 5
+```
+
+# Example Output
+
+```
+a: 5
+```
+
+```
+b: 3
+```
+
+e.g. When you hit **run**, this is what should happen:
+
+![](https://cdn.fs.teachablecdn.com/tgdNl0iSqK6RpPyYZh9d)
+
+# Hint
+
+1. You should not have to type any numbers in your code. 
+2. You might need to make some more variables.
+
+# Test Your Code
+
+Before checking the solution, try copy-pasting your code into this repl: 
+
+[https://repl.it/@appbrewery/day-1-4-test-your-code](https://repl.it/@appbrewery/day-1-4-test-your-code)
+
+This repl includes my testing code that will check if your code meets this assignment's objectives. 
 
 
-## learning to build 1 proje5ct per day, this is how I am going to master Python.
 
 
-### Guide: Angela Yu
+# Solution
 
-
-> The projects i will be working on:
-
-
-* Blackjack
-
-
-* Snake Game
-
-
-* Pong Game
-
-
-* Auto Swipe on Tinder
-
-
-* Auto Job Applications on LinkedIn
-
-
-* Automate Birthday Emails/SMS
-
-
-* Fully Fledged Blog Website
-
-
-* Build Your Own Public API
-
-
-* Data Science with Google Trends
-
-
-* Analysing Lego Datasets
-
-
-* Google App Store Analysis
-
-
-* and much much more!
+[https://repl.it/@appbrewery/day-1-4-solution](https://repl.it/@appbrewery/day-1-4-solution)
