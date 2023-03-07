@@ -1,2 +1,3 @@
-print("Hello World\n")
+#!/usr/bin/bash
+print('Hello World')
 print("Hello " + "Max")
