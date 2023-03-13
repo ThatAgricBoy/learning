@@ -4,7 +4,7 @@ while True:
 	name = input()
 	if name == '':
 		break
-	catNames = catNames + []
+	catNames = catNames + [name]
 print('The cat names are: ')
 for name in catNames:
 	print(' ' + name)
