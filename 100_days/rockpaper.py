@@ -40,37 +40,46 @@ compTurn = gamePlay[random_choice]
 
 if myTurn == 'rock' and compTurn == 'rock':
     print(rock)
+    print("Computer choose:")
     print(rock)
     print("Draw")
 elif myTurn == 'rock' and compTurn == 'paper':
     print(rock)
+    print("Computer choose:")
     print(paper)
     print("You lose: Paper beats rock")
 elif myTurn == 'rock' and compTurn == 'scissors':
     print(rock)
+    print("Computer choose:")
     print(scissors)
     print("You Win: Rock beats scissors")
 elif myTurn == 'paper' and compTurn == 'rock':
     print(paper)
+    print("Computer choose:")
     print(rock)
     print("You Win: Paper beats rock")
 elif myTurn == 'paper' and compTurn == 'paper':
     print(paper)
+    print("Computer choose:")
     print(paper)
     print("Draw")
 elif myTurn == 'paper' and compTurn == 'scissors':
     print(paper)
+    print("Computer choose:")
     print(scissors)
     print("You lose: Scissors beats paper")
 elif myTurn == 'scissors' and compTurn == 'rock':
     print(scissors)
+    print("Computer choose:")
     print(rock)
     print("You lose: Rock beats scissors")
 elif myTurn == 'scissors' and compTurn == 'paper':
     print(scissors)
+    print("Computer choose:")
     print(paper)
     print("You Win: Scissors beats paper")
 elif myTurn == 'scissors' and compTurn == 'scissors':
     print(scissors)
+    print("Computer choose:")
     print(scissors)
     print("Draw")
