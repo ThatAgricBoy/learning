@@ -1,13 +1,13 @@
 # 100 days, 1 hour per day,
 
 
-## learning to build 1 proje5ct per day, this is how I am going to master Python.
+## learning to build 1 project per day, this is how I am going to master Python.
 
 
 ### Guide: Angela Yu
 
 
-> The projects i will be working on:
+> The projects I will be working on:
 
 
 * Blackjack
