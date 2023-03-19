@@ -8,6 +8,7 @@ for n in range(0, len(student_heights)):
 
 
 #Write your code below this row 👇
-  add = 
-
+total = 0
+total += student_heights[n]
 print(student_heights)
+print(total)
