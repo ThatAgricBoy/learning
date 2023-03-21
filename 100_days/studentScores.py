@@ -1,4 +1,4 @@
-#  Don't change the code below
+#!/usr/bin/python3
 student_scores = input("Input a list of student scores ").split()
 highest = 0
 for n in range(0, len(student_scores)):
