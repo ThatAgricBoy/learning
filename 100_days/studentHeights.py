@@ -16,4 +16,4 @@ for n in range(0, len(student_heights)):
     avg = total / count
 print(student_heights)
 print(total)
-print(round(avg, 2))
+print(round(avg))
