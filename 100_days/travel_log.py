@@ -18,7 +18,7 @@ travel_log = [
 
 #TODO: Write the function that will allow new countries
 #to be added to the travel_log. 👇
-def add_new_counry(country_visited, Num_of_visits, cities_visited):
+def add_new_country(country_visited, Num_of_visits, cities_visited):
     """
         create new country
         append to the list
