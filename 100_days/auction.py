@@ -23,6 +23,12 @@ while True:
 
 print("\nThe auction has ended.\n")
 
-highest_bid = max(bid_diction, key=lambda x:x["bid"])
-print(f"The winner is {highest_bid['name']} with a bid of ${highest_bid['bid']}!")    
+highest_bidder = None
+highest_bid = 0
 
+for bid in bid_diction:
+    if bid["bid"] > highest_bid:
+        highest_bid = bid["bid"]
+        highest_bidder = bid["name"]
+
+print(f"The winner is {highest_bidder} with a bid of ${highest_bid}!")
