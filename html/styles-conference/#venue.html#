@@ -3,7 +3,7 @@
 
   <head>
     <meta charset="utf-8">
-    <title>Venue - Styles Conference</title>
+    <title>Styles Conference</title>
     <link rel="stylesheet" href="assets/stylesheets/main.css">
   </head>
 
@@ -12,10 +12,12 @@
     <!-- Header -->
 
     <header class="container">
+      <section class="container>
 
       <h1>
         <a href="index.html">Styles Conference</a>
       </h1>
+      
 
       <h3>August 24&ndash;26th &mdash; Chicago, IL</h3>
 
@@ -31,11 +33,7 @@
 
     <!-- Main content -->
 
-    <section class="container">
-
-      <h1>Venue</h1>
-
-    </section>
+    <h1>Venue</h1>
 
     <!-- Footer -->
 
