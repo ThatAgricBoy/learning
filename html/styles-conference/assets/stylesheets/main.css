@@ -47,7 +47,7 @@ table {
   border-spacing: 0;
 }
 
-/*
+/*0
   ========================================
   Custom styles
   ========================================
@@ -344,4 +344,41 @@ p a {
   margin-top: 88px;
   padding: 22px 0;
   text-align: center;
+}
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+.logo {
+  border-top: 4px solid #648880;
+  padding: 40px 0 22px 0;
+  float: left;
+}
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+
+.primary-footer small {
+  float: left;
 }
