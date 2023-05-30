@@ -4,25 +4,25 @@ from food import Food
 from scoreboard import Scoreboard
 import time
 
-screen = Screen()
-screen.setup(width=600, height=600)
-screen.bgcolor("black")
-screen.title("My Snake Game")
-screen.tracer(0)
+window = Screen()
+window.setup(width=600, height=600)
+window.bgcolor("black")
+window.title("Snake Game")
+window.tracer(0)
 
 snake = Snake()
 food = Food()
 scoreboard = Scoreboard()
 
-screen.listen()
-screen.onkey(snake.up, "Up")
-screen.onkey(snake.down, "Down")
-screen.onkey(snake.left, "Left")
-screen.onkey(snake.right, "Right")
+window.listen()
+window.onkey(snake.up, "Up")
+window.onkey(snake.down, "Down")
+window.onkey(snake.left, "Left")
+window.onkey(snake.right, "Right")
 
 game_is_on = True
 while game_is_on:
-    screen.update()
+    window.update()
     time.sleep(0.1)
     snake.move()
 
@@ -45,8 +45,4 @@ while game_is_on:
             game_is_on = False
             scoreboard.game_over()
 
-
-
-
-
-screen.exitonclick()
+window.exitonclick()
