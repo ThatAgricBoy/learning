@@ -1,6 +1,7 @@
 from turtle import Screen
 from paddle import Pad
 from ball import Ball
+from scoreboard import Scoreboard
 import time
 
 window = Screen()
@@ -12,7 +13,7 @@ window.tracer(0)
 right_pad = Pad((350, 0))
 left_pad = Pad((-350, 0))
 ball = Ball()
-
+scoreboard = Scoreboard()
 
 window.listen()
 window.onkey(right_pad.go_up, "Up")
