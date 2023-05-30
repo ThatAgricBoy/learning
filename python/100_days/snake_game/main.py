@@ -21,9 +21,11 @@ window.onkey(snake.left, "Left")
 window.onkey(snake.right, "Right")
 
 game_is_on = True
+move_delay = 0.2
+
 while game_is_on:
     window.update()
-    time.sleep(0.1)
+    time.sleep(move_delay)
     snake.move()
 
     #Detect collision with food.
@@ -32,8 +34,17 @@ while game_is_on:
         snake.extend()
         scoreboard.increase_score()
 
+        # Increase speed when score reaches certain thresholds
+        if scoreboard.score % 5 == 0:
+            move_delay *= 0.9
+
     #Detect collision with wall.
-    if snake.head.xcor() > 280 or snake.head.xcor() < -280 or snake.head.ycor() > 280 or snake.head.ycor() < -280:
+    if (
+            snake.head.xcor() > 290 or
+            snake.head.xcor() < -290 or
+            snake.head.ycor() > 290 or
+            snake.head.ycor() < -290
+    ):
         game_is_on = False
         scoreboard.game_over()
 
