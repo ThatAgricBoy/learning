@@ -23,7 +23,7 @@ window.onkey(left_pad.go_down, "s")
 
 game_is_on = True
 while game_is_on:
-    time.sleep(0.1)
+    time.sleep(ball.move_speed)
     window.update()
     ball.ball_move()
 
@@ -35,8 +35,10 @@ while game_is_on:
 
     if ball.xcor() > 380:
         ball.reset_position()
+        scoreboard.l_point()
 
     if ball.xcor() < -380:
         ball.reset_position()
+        scoreboard.r_point()
 
 window.exitonclick()
