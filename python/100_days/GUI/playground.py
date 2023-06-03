@@ -13,3 +13,12 @@ def add(*args):
 
 add(3, 4, 8, 9, 12, 17, 17, 8, 90)
 add(1, 2, 3)
+
+class Car:
+    def __init__(self, **kw):
+        self.make = kw.get("make")
+        self.model = kw.get("model")
+        self.color = kw.get("color")
+
+my_car = Car(make="Nissan", model="Skyline")
+print(my_car.model)
