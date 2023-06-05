@@ -72,7 +72,7 @@ def count_down(count):
 
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
-window.title("Pomodoro")
+window.title("Pomodoro Technique")
 window.config(padx=100, pady=50, bg=YELLOW)
 
 
