@@ -84,3 +84,5 @@ check_marks = Label(fg= GREEN, bg=YELLOW)
 check_marks.grid(column=1, row=3)
 
 window.mainloop()
+
+## This is just a comment
