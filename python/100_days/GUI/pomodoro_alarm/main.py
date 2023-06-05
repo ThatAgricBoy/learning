@@ -1,16 +1,23 @@
 from tkinter import *
 import math
+from pydub import AudioSegment
+from pydub.playback import play
 # ---------------------------- CONSTANTS ------------------------------- #
 PINK = "#e2979c"
 RED = "#e7305b"
 GREEN = "#9bdeac"
 YELLOW = "#f7f5dd"
 FONT_NAME = "Courier"
-WORK_MIN = 25
+WORK_MIN = 1
 SHORT_BREAK_MIN = 5
 LONG_BREAK_MIN = 20
 reps = 0
 timer = None
+
+#-----------------------------SOUND-----------------------------------------#
+def play_sound():
+    sound = AudioSegment.from_file('notification.wav', format='wav')
+    play(sound)
 # ---------------------------- TIMER RESET ------------------------------- # 
 def reset_timer():
     window.after_cancel(timer)
@@ -55,6 +62,7 @@ def count_down(count):
         for _ in range(work_sessions):
             marks += "✅"
         check_marks.config(text=marks)
+        play_sound()
 # ---------------------------- UI SETUP ------------------------------- #
 window = Tk()
 window.title("Pomodoro Alart")
