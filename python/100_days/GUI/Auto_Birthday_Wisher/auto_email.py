@@ -1,6 +1,7 @@
 import smtplib
 from random import choice
 import datetime as dt
+import smtplib
 
 date = dt.datetime.now()
 today = date.weekday()
