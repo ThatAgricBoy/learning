@@ -9,6 +9,7 @@ subject = 'Dev Samurai Monday Motivations'
 body = 'Hey, You will be fine'
 
 email_text = f"""\
+
 From: {sent_from}
 To: {", ".join(to)}
 Subject: {subject}

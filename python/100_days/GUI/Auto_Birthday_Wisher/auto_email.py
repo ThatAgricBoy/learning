@@ -1,37 +1,36 @@
-import smtplib
 from random import choice
 import datetime as dt
 import smtplib
 
+MY_EMAIL = "devsamurai4@gmail.com"
+MY_PASSWORD = "yhygoimvgfzfeysg"
+
 date = dt.datetime.now()
 today = date.weekday()
-if today == 3:
+if today == 0:
     with open("quotes.txt", "r") as f:
         quotes = f.readlines()
         random_quotes = choice(quotes)
 
-    gmail_user = 'devsamurai4@gmail.com'
-    gmail_password = 'yhygoimvgfzfeysg'
-
-    sent_from = gmail_user
-    to = ['samueljohnmaxi@gmail.com']
+    sent_from = MY_EMAIL
+    to = ['samueljohn3999@gmail.com']
     body = random_quotes
     subject = 'Dev Samurai Monday Motivations'
 
     email_text = f"""\
-    From: {sent_from}
-    To: {", ".join(to)}
-    Subject: {subject}
-    {body}
-    """
+From: {sent_from}
+To: {", ".join(to)}
+Subject: {subject}
+{body}
+"""
 
     try:
         server = smtplib.SMTP_SSL('smtp.gmail.com', 465)
         server.ehlo()
-        server.login(gmail_user, gmail_password)
+        server.login(MY_EMAIL, MY_PASSWORD)
         server.sendmail(sent_from, to, email_text)
         server.close()
 
         print('Email sent!')
-    except:
-        print('Something went wrong...')
+    except smtplib.SMTPException as e:
+        print(f'Error sending email: {str(e)}')

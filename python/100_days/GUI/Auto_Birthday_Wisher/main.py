@@ -2,20 +2,14 @@ import smtplib
 from email.mime.text import MIMEText
 
 subject = "Python MailDrop"
-body = "Hello Dev"
+body = """
+Hello Dev.
+This is still a test
+Like I said it just a test
+"""
 sender = "devsamurai4@gmail.com"
-recipients = "devsamurai4@yahoo.com"
-password = "k3H4uNZC2+(m#G!cX9()"
-
-import smtplib
-from email.mime.text import MIMEText
-
-subject = "Email Subject"
-body = "This is the body of the text message"
-sender = "sender@gmail.com"
-recipients = ["recipient1@gmail.com", "recipient2@gmail.com"]
-password = "password"
-
+recipients = "samueljohn3999@gmail.com"
+password = "yhygoimvgfzfeysg"
 
 def send_email(subject, body, sender, recipients, password):
     msg = MIMEText(body)
