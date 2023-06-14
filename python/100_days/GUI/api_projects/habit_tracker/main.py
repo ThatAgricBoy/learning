@@ -39,7 +39,7 @@ user_params = {
 # # today = datetime(year=2023, month=6, day=13)
 # graph_config = {
 #     "date": today.strftime("%Y%m%d"),
-#     "quantity": "5"
+#     "quantity": input("How many pages did you write today? ")
 # }
 # response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
 # print(response.text)
