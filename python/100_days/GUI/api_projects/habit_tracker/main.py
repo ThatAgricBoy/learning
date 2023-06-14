@@ -3,6 +3,7 @@ from datetime import datetime
 
 USERNAME = "devsamurai"
 TOKEN = "pixelakey"
+MY_GRAPH = "graph1"
 pixela_endpoint = "https://pixe.la/v1/users"
 
 user_params = {
@@ -27,14 +28,23 @@ user_params = {
 # }
 # response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
 # print(response.text)
-graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/graph1"
+#graph_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{MY_GRAPH}"
 headers = {
     "X-USER-TOKEN": TOKEN
 }
+# today = datetime(year=2023, month=6, day=13)
+# graph_config = {
+#     "date": today.strftime("%Y%m%d"),
+#     "quantity": "5"
+# }
+# response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
+# print(response.text)
 today = datetime(year=2023, month=6, day=13)
-graph_config = {
-    "date": today.strftime("%Y%m%d"),
-    "quantity": "5"
+now = today.strftime("%Y%m%d")
+update_endpoint = f"{pixela_endpoint}/{USERNAME}/graphs/{MY_GRAPH}/{now}"
+# print(update_endpoint)
+update_params = {
+    "quantity": "15",
 }
-response = requests.post(url=graph_endpoint, json=graph_config, headers=headers)
+response = requests.put(url=update_endpoint, json=update_params, headers=headers)
 print(response.text)
