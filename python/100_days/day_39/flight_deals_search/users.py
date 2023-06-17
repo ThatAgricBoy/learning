@@ -1,7 +1,7 @@
 import requests
 
 # set endpoint
-SHEETY_PRICES_ENDPOINT = "https://api.sheety.co/9a586a9d448d4610d5f145facb78c9f0/flightDeals/users"
+SHEETY_USERS_ENDPOINT = "https://api.sheety.co/9a586a9d448d4610d5f145facb78c9f0/flightDeals/users"
 
 
 class UserManager:
@@ -14,7 +14,7 @@ class UserManager:
 
     #  used this to manually populate the sheety file, and validate the syntax of the parameters passed
     def get_destination_data(self):
-        response = requests.get(url=SHEETY_PRICES_ENDPOINT)
+        response = requests.get(url=SHEETY_USERS_ENDPOINT)
         data = response.json()
         print(data)
         self.destination_data = data["users"]
@@ -52,7 +52,7 @@ class UserManager:
             }
         }
         # post the infromation for the use in the sheety users tab
-        code_response = requests.post(url=f"{SHEETY_PRICES_ENDPOINT}", json=sheet_parameters)
+        code_response = requests.post(url=f"{SHEETY_USERS_ENDPOINT}", json=sheet_parameters)
         print(code_response.json())
 
 
