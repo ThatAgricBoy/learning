@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Contact Form</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-image: url('tech_roads1.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center center;
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            font-family: Arial, sans-serif;
+            color: black;
+        }
+
+        .content {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        textarea {
+            box-sizing: border-box;
+        }
+
+        form {
+            box-sizing: border-box;
+            max-width: 400px;
+            padding: 20px;
+            background-color: rgba(255, 255, 255, 0.7);
+            border-radius: 10px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input,
+        textarea {
+            width: 90%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        textarea {
+            resize: vertical;
+        }
+
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+<div class="content">
+    <h1>My Contact Details</h1>
+    <p>Mobile Number: 2348138133145</p>
+    <p>Email: samueljohn3999@gmail.com</p>
+    <form action="mailto:samueljohnmaxi@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+        <label for="message">Do you have something you would like to ask me?</label>
+        <textarea id="message" name="message" cols="30" rows="10"></textarea>
+        <input type="submit">
+    </form>
+</div>
+</body>
+<!--<script>-->
+<!--    // Get a reference to the form and the textarea-->
+<!--    const form = document.getElementById('contactForm');-->
+<!--    const textarea = document.getElementById('message');-->
+
+<!--    // Add an event listener to the form for the "submit" event-->
+<!--    form.addEventListener('submit', function (event) {-->
+<!--        // Prevent the default form submission behavior-->
+<!--        event.preventDefault();-->
+
+<!--        // Clear the textarea by setting its value to an empty string-->
+<!--        textarea.value = '';-->
+
+<!--        // Optionally, you can display a confirmation message to the user-->
+<!--        alert('Form submitted successfully!');-->
+<!--    });-->
+<!--</script>-->
+
+</html>

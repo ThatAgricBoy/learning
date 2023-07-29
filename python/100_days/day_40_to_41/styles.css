@@ -1,0 +1,74 @@
+body {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: #ffffff;
+    justify-content: center;
+    align-items: center;
+    background-image: url('tech_roads1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.cv-container {
+    display: flex;
+    min-height: 100vh;
+
+}
+
+.cv-image {
+    flex: 1;
+    min-height: 100vh;
+    background-color: white;
+    background-image: url('tech_roads1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.cv-content {
+    flex: 1;
+    padding: 20px;
+    background-image: url('tech_roads1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+.contact-info {
+    margin-bottom: 20px;
+}
+
+.work-experience,
+.tech-skills,
+.education,
+.ongoing-training,
+.language-skills {
+    margin-bottom: 40px;
+}
+
+ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+ul li {
+    margin-bottom: 10px;
+}
+
+a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
