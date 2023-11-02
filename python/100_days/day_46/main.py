@@ -12,7 +12,7 @@ response = requests.get("https://www.billboard.com/charts/hot-100/{year}".format
 soup = BeautifulSoup(response.text, "html.parser")
 
 # Find all <h3> elements with class 'c-title'
-song_titles = soup.find_all("h3", class_="c-title")
+song_titles = soup.find_all("h3", class_="c-title  a-no-trucate")
 
 # Extract and print the song titles
 for title in song_titles:
