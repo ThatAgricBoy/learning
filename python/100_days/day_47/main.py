@@ -5,7 +5,8 @@ Price scraping on Amazon
 import requests
 from lxml import html
 
-url = "https://www.amazon.com/Bluetooth-Detachable-Surround-Mountable-Separable/dp/B0CH3BM6M8/ref=sr_1_5?crid=3QAZ99PIYXNN8&keywords=home+theater+sound+system&qid=1699132693&refinements=p_36%3A1253504011&rnid=386442011&s=electronics&sprefix=home+thea%2Caps%2C851&sr=1-5"
+url = "https://www.amazon.com/Bluetooth-Detachable-Surround-Mountable-Separable/dp/B0CH3BM6M8/ref=sr_\
+    1_5?crid=3QAZ99PIYXNN8&keywords=home+theater+sound+system&qid=1699132693&refinements=p_36%3A1253504011&rnid=\386442011&s=electronics&sprefix=home+thea%2Caps%2C851&sr=1-5"
 
 headers = {
     "User-Agent": "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/94.0.4606.81 Safari/537.36",
