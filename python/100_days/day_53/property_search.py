@@ -2,6 +2,7 @@
 """
 Capstone web scrapping project.
 using beautiful soup and selenium
+Day 53 - Intermediate+ Web Scrapping
 """
 from bs4 import BeautifulSoup
 from selenium import webdriver
